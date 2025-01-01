@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=rinhabackendspring
+      - POSTGRES_PASSWORD=rinhabackendspring
+      - POSTGRES_DB=rinhabackendspring
+    ports:
+      - 5432:5432
